@@ -9,7 +9,7 @@ class Encoded {
     private String resultText;
     private final String groupID = "G04/SE-G06"; // Our group ID 
 
-    // Constructors [cite: 12]
+    // Constructors
     public Encoded() {}
 
     public Encoded(String inputText) {
