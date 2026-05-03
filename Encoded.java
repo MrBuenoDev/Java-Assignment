@@ -10,7 +10,17 @@ class Encoded {
     public Encoded(String inputText) {
         this.inputText = inputText;
     }
-// Contributed by: [FERNANDEZ RUGU]
+
+    // Tulis code part Implement checkStringValidity, countCharacters, and the hashCode logic for generateShift.
+
+
+
+
+
+
+
+    
+    // Contributed by: [FERNANDEZ RUGU]
     public String applyCipher(String inputText, int finalShift) {
         StringBuilder result = new StringBuilder();
 
