@@ -10,11 +10,11 @@ This project is a Java Swing-based graphical application that generates an encod
 
 | Name | Role | Core Contributions |
 | :--- | :--- | :--- |
-| **[Member 1: FERNANDEZ RUGU (104184) ]** | Backend Logic | Implemented `applyCipher()` shifting logic for letters and digits. |
-| **[Member 2: BATRISYA QISTINA BINTI JUMRY (103516)]** | GUI Developer | Designed the Java Swing interface (`EncoderGUI.java`). |
-| **[Member 3: ELISA PETRI ANAK EKSON (102534)]** | Validation & Hash | Implemented `checkStringValidity()`, `countCharacters()`, and `generateShift()`. |
-| **[Member 4: KHIEW JUNG HUAT (104669)]** | Lead Integrator | Managed `Assignment.java`, wired action listeners, handled GitHub merging. |
-| **[Member 5: AHMAD FAKHRURIZZUDIN BIN AHMAD FAIRUZ (103118)]** | Documentation | Managed code contributor tags, authored the 2-page technical report. |
+| **Member 1: FERNANDEZ RUGU (104184)** | Backend Logic | Implemented `applyCipher()` shifting logic for letters and digits. |
+| **Member 2: BATRISYA QISTINA BINTI JUMRY (103516)** | GUI Developer | Designed the Java Swing interface (`EncoderGUI.java`). |
+| **Member 3: ELISA PETRI ANAK EKSON (102534)** | Validation & Hash | Implemented `checkStringValidity()`, `countCharacters()`, and `generateShift()`. |
+| **Member 4: KHIEW JUNG HUAT (104669)** | Lead Integrator | Managed `Assignment.java`, wired action listeners, handled GitHub merging. |
+| **Member 5: AHMAD FAKHRURIZZUDIN BIN AHMAD FAIRUZ (103118)** | Documentation | Managed code contributor tags, authored the 2-page technical report. |
 
 ## ✨ Features
 *   **Java Swing GUI:** A user-friendly interface with input fields, action buttons, and a structured display area.
