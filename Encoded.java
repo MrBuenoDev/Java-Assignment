@@ -4,7 +4,7 @@ class Encoded {
     private String resultText;
     private final String groupID = "G04/SE-G06"; // Our group ID 
 
-// Contributed by [Elisa]
+// Contributed by: [Elisa]
 // Constructors
     public Encoded() {}
 
@@ -36,13 +36,11 @@ class Encoded {
     }
 
     // Method 2: Count non-space characters
-    public int countCharacters(String text) {
-
+    public int countCharacters(String inputText) {
         int count = 0;
 
-        for (int i = 0; i < text.length(); i++) {
-
-            if (text.charAt(i) != ' ') {
+        for (int i = 0; i < inputText.length(); i++) {
+            if (inputText.charAt(i) != ' ') {
                 count++;
             }
         }
@@ -52,7 +50,6 @@ class Encoded {
 
     // Method 3: Generate group shift using hashCode
     public int generateShift() {
-
         int hash = groupID.hashCode();
 
         // make positive number
