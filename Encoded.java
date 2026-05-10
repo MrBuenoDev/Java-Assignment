@@ -4,27 +4,39 @@ class Encoded {
     private String resultText;
     private final String groupID = "G04/SE-G06"; // Our group ID 
 
-// Contributed by Elisa
-public class Encoded {
+// Contributed by [Elisa]
+// Constructors
+    public Encoded() {}
+
+    public Encoded(String inputText) {
+        this.inputText = inputText;
+    }
 
     // Method 1: Validate Input
-    public static boolean checkStringValidity(String text) {
-
-        for (int i = 0; i < text.length(); i++) {
-
-            char ch = text.charAt(i);
-
-            // check if character is NOT lowercase letter or space
-            if (!(ch >= 'a' && ch <= 'z') && ch != ' ') {
-                return false;
+    public boolean checkStringValidity(String inputText) {
+        // Handle empty input
+        if (inputText == null || inputText.trim().isEmpty()) {
+            return false;
+        }
+        
+        // Loop through each character to check against allowed types
+        for (int i = 0; i < inputText.length(); i++) {
+            char c = inputText.charAt(i);
+            
+            //accept only lowercase letters, digits, and spaces
+            boolean isLowercase = (c >= 'a' && c <= 'z');
+            boolean isDigit = (c >= '0' && c <= '9');
+            boolean isSpace = (c == ' ');
+            
+            if (!isLowercase && !isDigit && !isSpace) {
+                return false; // Immediately fail if an invalid character is found
             }
         }
-
-        return true;
+        return true; 
     }
 
     // Method 2: Count non-space characters
-    public static int countCharacters(String text) {
+    public int countCharacters(String text) {
 
         int count = 0;
 
@@ -39,7 +51,7 @@ public class Encoded {
     }
 
     // Method 3: Generate group shift using hashCode
-    public static int generateShift(String groupID) {
+    public int generateShift() {
 
         int hash = groupID.hashCode();
 
