@@ -16,6 +16,8 @@ class Encoded {
 
 
 
+
+
     // Contributed by: [FERNANDEZ RUGU]
     public String applyCipher(String inputText, int finalShift) {
         StringBuilder result = new StringBuilder();
