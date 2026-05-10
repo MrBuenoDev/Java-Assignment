@@ -1,3 +1,9 @@
+class Encoded {
+    private String inputText;
+    private int charCount;
+    private String resultText;
+    private final String groupID = "G04/SE-G06"; // Our group ID 
+
 // Contributed by Elisa
 public class Encoded {
 
