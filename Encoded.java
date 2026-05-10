@@ -52,3 +52,4 @@ class Encoded {
         
         return result.toString();
     }
+}
