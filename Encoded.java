@@ -6,10 +6,20 @@ class Encoded {
 
 // Contributed by: [Elisa]
 // Constructors
-    public Encoded() {}
+    public Encoded() {
+        this.inputText  = "";
+        this.charCount  = 0;
+        this.resultText = "";
+    }
 
     public Encoded(String inputText) {
         this.inputText = inputText;
+        this.charCount = countCharacters(inputText);
+ 
+        int shift      = generateShift();          // groupShift (1–10)
+        int finalShift = shift + this.charCount;   // final encoding shift
+ 
+        this.resultText = applyCipher(inputText, finalShift);
     }
 
     // Method 1: Validate Input
@@ -94,5 +104,27 @@ class Encoded {
         }
         
         return result.toString();
+    }
+
+    // ── Getters (read-only access for the GUI) ────────────────
+    // Contributed by: [Member A]
+ 
+    /** Returns the encoded result string. */
+    public String getResultText(){ 
+        return resultText; 
+    }
+ 
+    /** Returns the non-space character count. */
+    public int getCharCount(){ 
+        return charCount;  
+    }
+ 
+    /**
+     * Returns the finalShift that was used during encoding.
+     * Recalculates on the fly from the stored charCount so the
+     * GUI can display it without storing it as a separate field.
+     */
+    public int getFinalShift() {
+        return generateShift() + charCount;
     }
 }
